@@ -18,7 +18,9 @@ const AboutSection: React.FC<AboutSectionProps> = ({ id, onNavigate }) => {
               <span className="text-primary">Global Perspective</span>
             </h2>
             <div className="space-y-6 text-muted-gray leading-relaxed text-base font-bold">
-              <p>Miles is an Australian-born Vietnamese and Tam being the other is a true Hanoian. Together, we bring over 12 years of experience designing travel in Vietnam. English-speaking and locally based, we create journeys we would confidently recommend to friends and family.</p>
+              <p>We offer the perfect blend of perspectives. Minh is of Australian and Vietnamese heritage and brings a global understanding of service and comfort, while Tam is a true Hanoian who provides the profound local insight that only a lifelong resident possesses.
+
+With over 12 years of combined experience designing travel in Vietnam, we bridge the gap between culture and convenience. Living locally and speaking fluent English, we curate journeys that pass our ultimate test. We only plan trips that we would confidently recommend to our own friends and family. Expect a seamless balance of authentic discovery, absolute clarity, and careful planning from the moment you land until you return home.</p>
             </div>
             <div className="mt-10 grid grid-cols-2 gap-4">
               <div className="p-6 bg-white rounded-2xl shadow-lg border border-slate-100">
