@@ -110,7 +110,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
         </div>
         <footer className="mt-8 text-center pb-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-[9px] tracking-[0.3em] font-black text-charcoal/30 gap-4">
-            <p>© 2024 VIETMATE. ALL RIGHTS RESERVED. ✨</p>
+            <p>© 2026 VIETMATE. ALL RIGHTS RESERVED. ✨</p>
             <div className="flex gap-8">
               <a className="hover:text-charcoal transition-colors" href="#">PRIVACY</a>
               <a className="hover:text-charcoal transition-colors" href="#">TERMS</a>
