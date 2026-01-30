@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full overflow-hidden">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietmate | Vietnam Simplified</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D91B1B",
+              secondary: "#D91B1B",
+              accent: "#D91B1B",
+              "primary-hover": "#B91212",
+              "background-light": "#F9F9F9",
+              "background-warm": "#F8F9FA",
+              "background-cream": "#FFFDF5",
+              "background-dark": "#121212",
+              charcoal: "#1A1A1A",
+              "muted-gray": "#333333",
+              "card-off-white": "#F2F2F2",
+            },
+            fontFamily: {
+              display: ["Montserrat", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "12px",
+              xl: "16px",
+              "2xl": "24px",
+              "3xl": "32px",
+            },
+            boxShadow: {
+              "header-depth":
+                "0 4px 20px -2px rgba(0, 0, 0, 0.15), 0 2px 8px -1px rgba(0, 0, 0, 0.05)",
+              vibrant:
+                "0 20px 50px -10px rgba(217, 27, 27, 0.15), 0 10px 30px -5px rgba(217, 27, 27, 0.1)",
+              premium:
+                "0 10px 40px -10px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03)",
+              "subtle-card":
+                "0 4px 15px -1px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03)",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .blur-nav {
+          backdrop-filter: blur(20px);
+        }
+        .texture-overlay {
+          position: relative;
+        }
+        .texture-overlay::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          opacity: 0.03;
+          pointer-events: none;
+          background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCkC5_D9Wbr9PewHjNYJuL6EQ7rKUghbhQiV8wQ8VG16oH2AKDz8uAuyLSmhP_XdX58JnuBAHab-IOe0LPv2Vfq7NVEeNjqbiXYTApYlFai22L1ui5bzmKYLquX5enZDEtuSmKWuim4f2B9W28j0vvWZwKd4qOJeAxi-NYLSAAq7tYcFII8IYFz-uchLkedIrZKP1v5NGQSyz6p6aEJVQMNy5Rh1X7HfbsRTak08L8v2zuVGyu8Ua51PvYV3aVuXnfeC6H_h5CAH2is);
+          z-index: 1;
+        }
+        .vivid-img {
+          filter: saturate(1.1) contrast(1.1);
+        }
+        .section-gradient-accent {
+          background: linear-gradient(
+            135deg,
+            rgba(217, 27, 27, 0.08) 0%,
+            rgba(217, 27, 27, 0.03) 100%
+          );
+        }
+        .vn-flag-emoji {
+          display: block;
+          border-radius: 4px;
+          overflow: hidden;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .whatsapp-bounce:hover {
+          transform: translateY(-5px);
+        }
+        .region-card-description {
+          background: rgba(0, 0, 0, 0.75);
+          backdrop-filter: blur(4px);
+        }
+      }
+
+      /* Custom Scrollbar Hiding */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      
+      /* Material Symbols Setup */
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .star-filled {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+
+      /* Checkbox Toggle Logic */
+      .styled-toggle:checked + .toggle-card {
+          background-color: white;
+          border-color: #D91B1B;
+          color: #D91B1B;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 20px -5px rgba(217, 27, 27, 0.2);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light text-charcoal font-sans h-full overflow-hidden">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
