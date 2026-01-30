@@ -36,7 +36,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id, onNavigate }) => {
             onClick={() => onNavigate('regions')}
             className="bg-primary text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:scale-110 transition-all shadow-2xl shadow-red-600/40"
           >
-            Begin Exploration ➔
+            Begin Exploring ➔
           </button>
           <button 
             onClick={() => onNavigate('about')}
