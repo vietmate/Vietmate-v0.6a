@@ -28,7 +28,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id, onNavigate }) => {
         </h1>
         
         <p className="text-lg md:text-2xl text-charcoal font-bold mb-12 max-w-2xl mx-auto leading-relaxed">
-          Bespoke Vietnam travel, designed locally and tailored around how you want to travel.
+          "Experience Vietnam your way with bespoke journeys designed right here on the ground."
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
